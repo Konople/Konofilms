@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
+body {
+    background-image: url(assets/jpg/drama.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.b-example-divider {
+    height: 1.5rem;
+}
+
+section {
+    margin: 1.5%;
+    padding: 1.5%;
+    background-color: #313131;
+    border-radius: 10px;
+}
+
+section p {
+    font-family: 'Michroma', sans-serif;
+    color: white;
+}
+
+
+
+
+/*Шапка сайта*/
+header {
+    background-color: #cfcfcfcf;
+    padding: 1.5%;
+}
+
+/*Логотип*/
+.logo {
+    width: 75%;
+}
+
+/*Меню*/
+.nav-link {
+    font-family: 'Monomaniac One', sans-serif;
+    font-size: 24px;
+    color: black;
+    transition: color 0.7s;
+}
+
+    .nav-link:hover {
+        color: white;
+    }
+
+/*Поисковик*/
+.form-control {
+    padding: 3%;
+    border: none;
+    border-radius: 0;
+    font-family: 'Michroma', sans-serif;
+    font-size: 18px;
+}
+
+/*Вход и регистрация*/
+.btn {
+    border: none;
+    border-radius: 0;
+    font-family: 'Michroma', sans-serif;
+    font-size: 24px;
+}
+
+    .btn-outline-light {
+        background-color: black;
+    }
+
+
+/*Новинки, Фильмы, Сериалы, Мультфильмы*/
+
+/*Панель навигации*/
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    width: 50px;
+    height: 30px;
+}
+
+/*Кинопродукт, Фильм, Сериал, Мультфильм*/
+.card {
+    border: none;
+}
+
+    .card img {
+        border-radius: 10px;
+    }
+
+/*Рейтинг*/
+.text-white {
+    font-family: 'Lalezar', system-ui;
+    font-size: 16px;
+}
+
+.raiting {
+    width: 2em;
+    border-radius: 5px;
+}
+
+    .kp {
+        padding: 0 9%;
+        background-color: #D55900;
+    }
+
+    .imdb {
+        padding: 0 7%;
+        background-color: #D0D400;
+    }
+
+.cinema {
+    padding-left: 3.5%;
+}
+
+.prod {
+    padding-right: 2em;
+    width: 54px;
+    font-size: 15px;
+}
+
+
+/*Подвал сайта*/
+footer {
+    background-color: #cfcfcfcf;
+}
+
+    footer p {
+        font-family: 'Lalezar', system-ui;
+    }
+
+    footer ul {
+        border-bottom: solid black;
+    }
+
+.logo-footer img {
+    width: 70px;
+}
+
+.logo-footer p {
+    margin: 0;
+    font-family: 'Koulen', sans-serif;
+    font-size: 52px;
+    padding-left: 1rem;
+}

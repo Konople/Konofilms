@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Konofilms</title>
+</head>
+<body>
+
+    <!--Шапка сайта-->
+    <header>
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <!--Логотип-->
+            <a href="index.html" class="d-flex justify-content-center align-items-center mb-2 mb-lg-0">
+                <img class="logo" src="assets/png/lenta.png" alt="Лента">
+            </a>
+            
+            <!--Меню-->
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#" class="nav-link px-2">Films</a></li>
+                <li><a href="#" class="nav-link px-2">Cartoons</a></li>
+                <li><a href="#" class="nav-link px-2">Serials</a></li>
+            </ul>
+            
+            <!--Поисковик-->
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+            </form>
+            
+            <!--Вход и регистрация-->
+            <div class="text-end">
+                <button type="button" class="btn btn-outline-light me-2">Login</button>
+                <button type="button" class="btn btn-warning">Sign-up</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="b-example-divider"></div>
+
+    <!--Новинки-->
+    <section>
+        <div class="d-flex justify-content-between p-1">
+            <p>Latest novelties</p>
+            <!--Панель навигации-->
+            <div class="navigation">
+                <button type="button" class="carousel-control-prev-icon">
+                    <svg width="32" height="24" viewBox="0 0 52 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.939339 10.9393C0.353554 11.5251 0.353554 12.4749 0.939339 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939339 10.9393ZM52 10.5L2 10.5V13.5L52 13.5V10.5Z" fill="black"/>
+                    </svg>
+                </button>
+                <button type="button" class="carousel-control-next-icon">
+                    <svg width="32" height="24" viewBox="0 0 52 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M51.0607 13.0607C51.6464 12.4749 51.6464 11.5251 51.0607 10.9393L41.5147 1.3934C40.9289 0.807612 39.9792 0.807612 39.3934 1.3934C38.8076 1.97918 38.8076 2.92893 39.3934 3.51472L47.8787 12L39.3934 20.4853C38.8076 21.0711 38.8076 22.0208 39.3934 22.6066C39.9792 23.1924 40.9289 23.1924 41.5147 22.6066L51.0607 13.0607ZM0 13.5L50 13.5V10.5L0 10.5L0 13.5Z" fill="black"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="row row-cols-md-4">
+            <!--Кинопродукт-->
+            <div class="col p-3">
+                <div class="card rounded-4">
+                    <img src="assets/jpg/openngamer.jpg" alt="Оппенгеймер">
+                    <!--Рейтинг-->
+                    <div class="card-img-overlay d-flex justify-content-between align-items-end p-2">
+                        <div class="d-flex align-items-end text-white">
+                            <div class="raiting kp">8.5</div>
+                            <div class="cinema">KP</div>
+                        </div>
+                        <div class="d-flex align-items-end text-white">
+                            <div class="raiting imdb">8.5</div>
+                            <div class="cinema">IMDB</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Кинопродукт-->
+            <div class="col p-3">
+                <div class="card rounded-4">
+                    <img src="assets/jpg/napoleon.jpg" alt="Наполеон">
+                    <!--Рейтинг-->
+                    <div class="card-img-overlay d-flex justify-content-between align-items-end p-2">
+                        <div class="d-flex align-items-end text-white">
+                            <div class="raiting kp">8.3</div>
+                            <div class="cinema">KP</div>
+                        </div>
+                        <div class="d-flex align-items-end text-white">
+                            <div class="raiting imdb">8.6</div>
+                            <div class="cinema">IMDB</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Кинопродукт-->
+            <div class="col p-3">
+                <div class="card rounded-4">
+                    <img src="assets/jpg/galaxy.jpg" alt="Стражи галактики 3">
+                    <!--Рейтинг-->
+                    <div class="card-img-overlay d-flex justify-content-between align-items-end p-2">
+                        <div class="d-flex align-items-end text-white">
+                            <div class="raiting kp">8.2</div>
+                            <div class="cinema">KP</div>
+                        </div>
+                        <div class="d-flex align-items-end text-white">
+                            <div class="raiting imdb">7.9</div>
+                            <div class="cinema">IMDB</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Кинопродукт-->
+            <div class="col p-3">
+                <div class="card rounded-4">
+                    <img src="assets/jpg/boots.jpg" alt="Кот в сапогах: Последнее желание">
+                    <!--Рейтинг-->
+                    <div class="card-img-overlay d-flex justify-content-between align-items-end p-2">
+                        <div class="d-flex align-items-end text-white">
+                            <div class="raiting kp">7.1</div>
+                            <div class="cinema">KP</div>
+                        </div>
+                        <div class="d-flex align-items-end text-white">
+                            <div class="raiting imdb">7.8</div>
+                            <div class="cinema">IMDB</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="b-example-divider"></div>
+
+    <!--Фильмы-->
+    <section>
+        <div class="d-flex justify-content-between p-1">
+            <p>Films</p>
+            <!--Панель навигации-->
+            <div class="navigation">
+                <button type="button" class="carousel-control-prev-icon">
+                    <svg width="32" height="24" viewBox="0 0 52 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.939339 10.9393C0.353554 11.5251 0.353554 12.4749 0.939339 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939339 10.9393ZM52 10.5L2 10.5V13.5L52 13.5V10.5Z" fill="black"/>
+                    </svg>
+                </button>
+                <button type="button" class="carousel-control-next-icon">
+                    <svg width="32" height="24" viewBox="0 0 52 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M51.0607 13.0607C51.6464 12.4749 51.6464 11.5251 51.0607 10.9393L41.5147 1.3934C40.9289 0.807612 39.9792 0.807612 39.3934 1.3934C38.8076 1.97918 38.8076 2.92893 39.3934 3.51472L47.8787 12L39.3934 20.4853C38.8076 21.0711 38.8076 22.0208 39.3934 22.6066C39.9792 23.1924 40.9289 23.1924 41.5147 22.6066L51.0607 13.0607ZM0 13.5L50 13.5V10.5L0 10.5L0 13.5Z" fill="black"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="row row-cols-md-5">
+            <!--Фильм-->
+            <div class="col p-3">
+                <div class="card rounded-4">
+                    <img src="assets/jpg/matrix.jpg" alt="Матрица">
+                    <!--Рейтинг-->
+                    <div class="card-img-overlay d-flex justify-content-between align-items-end p-2">
+                        <div class="d-flex align-items-end text-white prod">
+                            <div class="raiting kp">8.5</div>
+                            <div class="cinema">KP</div>
+                        </div>
+                        <div class="d-flex align-items-end text-white prod">
+                            <div class="raiting imdb">8.7</div>
+                            <div class="cinema">IMDB</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Фильм-->
+            <div class="col p-3">
+                <div class="card rounded-4">
+                    <img src="assets/jpg/happy.jpg" alt="В погоне за счастьем">
+                    <!--Рейтинг-->
+                    <div class="card-img-overlay d-flex justify-content-between align-items-end p-2">
+                        <div class="d-flex align-items-end text-white prod">
+                            <div class="raiting kp">8.2</div>
+                            <div class="cinema">KP</div>
+                        </div>
+                        <div class="d-flex align-items-end text-white prod">
+                            <div class="raiting imdb">8.0</div>
+                            <div class="cinema">IMDB</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Фильм-->
+            <div class="col p-3">
+                <div class="card rounded-4">
+                    <img src="assets/jpg/begin.jpg" alt="Начало">
+                    <!--Рейтинг-->
+                    <div class="card-img-overlay d-flex justify-content-between align-items-end p-2">
+                        <div class="d-flex align-items-end text-white prod">
+                            <div class="raiting kp">8.6</div>
+                            <div class="cinema">KP</div>
+                        </div>
+                        <div class="d-flex align-items-end text-white prod">
+                            <div class="raiting imdb">8.8</div>
+                            <div class="cinema">IMDB</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Фильм-->
+            <div class="col p-3">
+                <div class="card rounded-4">
+                    <img src="assets/jpg/cock.jpg" alt="Бесславные ублюдки">
+                    <!--Рейтинг-->
+                    <div class="card-img-overlay d-flex justify-content-between align-items-end p-2">
+                        <div class="d-flex align-items-end text-white prod">
+                            <div class="raiting kp">7.9</div>
+                            <div class="cinema">KP</div>
+                        </div>
+                        <div class="d-flex align-items-end text-white prod">
+                            <div class="raiting imdb">8.3</div>
+                            <div class="cinema">IMDB</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Фильм-->
+            <div class="col p-3">
+                <div class="card rounded-4">
+                    <img src="assets/jpg/money.jpg" alt="Волк с Уолл-Стрит">
+                    <!--Рейтинг-->
+                    <div class="card-img-overlay d-flex justify-content-between align-items-end p-2">
+                        <div class="d-flex align-items-end text-white prod">
+                            <div class="raiting kp">7.9</div>
+                            <div class="cinema">KP</div>
+                        </div>
+                        <div class="d-flex align-items-end text-white prod">
+                            <div class="raiting imdb">8.2</div>
+                            <div class="cinema">IMDB</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="b-example-divider"></div>
+
+    <!--Сериалы-->
+    <section>
+        <div class="d-flex justify-content-between p-1">
+            <p>Serials</p>
+            <!--Панель навигации-->
+            <div class="navigation">
+                <button type="button" class="carousel-control-prev-icon">
+                    <svg width="32" height="24" viewBox="0 0 52 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.939339 10.9393C0.353554 11.5251 0.353554 12.4749 0.939339 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939339 10.9393ZM52 10.5L2 10.5V13.5L52 13.5V10.5Z" fill="black"/>
+                    </svg>
+                </button>
+                <button type="button" class="carousel-control-next-icon">
+                    <svg width="32" height="24" viewBox="0 0 52 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M51.0607 13.0607C51.6464 12.4749 51.6464 11.5251 51.0607 10.9393L41.5147 1.3934C40.9289 0.807612 39.9792 0.807612 39.3934 1.3934C38.8076 1.97918 38.8076 2.92893 39.3934 3.51472L47.8787 12L39.3934 20.4853C38.8076 21.0711 38.8076 22.0208 39.3934 22.6066C39.9792 23.1924 40.9289 23.1924 41.5147 22.6066L51.0607 13.0607ZM0 13.5L50 13.5V10.5L0 10.5L0 13.5Z" fill="black"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="row row-cols-md-5">
+            <!--Сериал-->
+            <div class="col p-3">
+                <div class="card rounded-4">
+                    <img src="assets/jpg/meta.jpg" alt="Во все тяжкие">
+                    <!--Рейтинг-->
+                    <div class="card-img-overlay d-flex justify-content-between align-items-end p-2">
+                        <div class="d-flex align-items-end text-white prod">
+                            <div class="raiting kp">8.9</div>
+                            <div class="cinema">KP</div>
+                        </div>
+                        <div class="d-flex align-items-end text-white prod">
+                            <div class="raiting imdb">9.5</div>
+                            <div class="cinema">IMDB</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Сериал-->
+            <div class="col p-3">
+                <div class="card rounded-4">
+                    <img src="assets/jpg/black_mirror.jpg" alt="Чёрное зеркало">
+                    <!--Рейтинг-->
+                    <div class="card-img-overlay d-flex justify-content-between align-items-end p-2">
+                        <div class="d-flex align-items-end text-white prod">
+                            <div class="raiting kp">8.5</div>
+                            <div class="cinema">KP</div>
+                        </div>
+                        <div class="d-flex align-items-end text-white prod">
+                            <div class="raiting imdb">8.8</div>
+                            <div class="cinema">IMDB</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Сериал-->
+            <div class="col p-3">
+                <div class="card rounded-4">
+                    <img src="assets/jpg/soprano.jpg" alt="Сопрано">
+                    <!--Рейтинг-->
+                    <div class="card-img-overlay d-flex justify-content-between align-items-end p-2">
+                        <div class="d-flex align-items-end text-white prod">
+                            <div class="raiting kp">8.7</div>
+                            <div class="cinema">KP</div>
+                        </div>
+                        <div class="d-flex align-items-end text-white prod">
+                            <div class="raiting imdb">9.2</div>
+                            <div class="cinema">IMDB</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Сериал-->
+            <div class="col p-3">
+                <div class="card rounded-4">
+                    <img src="assets/jpg/office.jpg" alt="Офис">
+                    <!--Рейтинг-->
+                    <div class="card-img-overlay d-flex justify-content-between align-items-end p-2">
+                        <div class="d-flex align-items-end text-white prod">
+                            <div class="raiting kp">8.2</div>
+                            <div class="cinema">KP</div>
+                        </div>
+                        <div class="d-flex align-items-end text-white prod">
+                            <div class="raiting imdb">8.9</div>
+                            <div class="cinema">IMDB</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Сериал-->
+            <div class="col p-3">
+                <div class="card rounded-4">
+                    <img src="assets/jpg/boom.jpg" alt="Теория большого взрыва">
+                    <!--Рейтинг-->
+                    <div class="card-img-overlay d-flex justify-content-between align-items-end p-2">
+                        <div class="d-flex align-items-end text-white prod">
+                            <div class="raiting kp">8.6</div>
+                            <div class="cinema">KP</div>
+                        </div>
+                        <div class="d-flex align-items-end text-white prod">
+                            <div class="raiting imdb">8.1</div>
+                            <div class="cinema">IMDB</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="b-example-divider"></div>
+
+    <!--Мультфильмы-->
+    <section>
+        <div class="d-flex justify-content-between p-1">
+            <p>Cartoons</p>
+            <!--Панель навигации-->
+            <div class="navigation">
+                <button type="button" class="carousel-control-prev-icon">
+                    <svg width="32" height="24" viewBox="0 0 52 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.939339 10.9393C0.353554 11.5251 0.353554 12.4749 0.939339 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939339 10.9393ZM52 10.5L2 10.5V13.5L52 13.5V10.5Z" fill="black"/>
+                    </svg>
+                </button>
+                <button type="button" class="carousel-control-next-icon">
+                    <svg width="32" height="24" viewBox="0 0 52 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M51.0607 13.0607C51.6464 12.4749 51.6464 11.5251 51.0607 10.9393L41.5147 1.3934C40.9289 0.807612 39.9792 0.807612 39.3934 1.3934C38.8076 1.97918 38.8076 2.92893 39.3934 3.51472L47.8787 12L39.3934 20.4853C38.8076 21.0711 38.8076 22.0208 39.3934 22.6066C39.9792 23.1924 40.9289 23.1924 41.5147 22.6066L51.0607 13.0607ZM0 13.5L50 13.5V10.5L0 10.5L0 13.5Z" fill="black"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="row row-cols-md-5">
+            <!--Мультфильм-->
+            <div class="col p-3">
+                <div class="card rounded-4">
+                    <img src="assets/jpg/spider.jpg" alt="Человек-Паук: Через вселенные">
+                    <!--Рейтинг-->
+                    <div class="card-img-overlay d-flex justify-content-between align-items-end p-2">
+                        <div class="d-flex align-items-end text-white prod">
+                            <div class="raiting kp">8.0</div>
+                            <div class="cinema">KP</div>
+                        </div>
+                        <div class="d-flex align-items-end text-white prod">
+                            <div class="raiting imdb">8.4</div>
+                            <div class="cinema">IMDB</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Мультфильм-->
+            <div class="col p-3">
+                <div class="card rounded-4">
+                    <img src="assets/jpg/pinocchio.jpg" alt="Пиноккио (Гильермо Дель Торо)">
+                    <!--Рейтинг-->
+                    <div class="card-img-overlay d-flex justify-content-between align-items-end p-2">
+                        <div class="d-flex align-items-end text-white prod">
+                            <div class="raiting kp">7.6</div>
+                            <div class="cinema">KP</div>
+                        </div>
+                        <div class="d-flex align-items-end text-white prod">
+                            <div class="raiting imdb">8.1</div>
+                            <div class="cinema">IMDB</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Мультфильм-->
+            <div class="col p-3">
+                <div class="card rounded-4">
+                    <img src="assets/jpg/clone_wars.jpg" alt="Звёздные войны: Войны клонов (Полнометражный мультфильм)">
+                    <!--Рейтинг-->
+                    <div class="card-img-overlay d-flex justify-content-between align-items-end p-2">
+                        <div class="d-flex align-items-end text-white prod">
+                            <div class="raiting kp">7.3</div>
+                            <div class="cinema">KP</div>
+                        </div>
+                        <div class="d-flex align-items-end text-white prod">
+                            <div class="raiting imdb">8.1</div>
+                            <div class="cinema">IMDB</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Мультфильм-->
+            <div class="col p-3">
+                <div class="card rounded-4">
+                    <img src="assets/jpg/cars.jpg" alt="Тачки">
+                    <!--Рейтинг-->
+                    <div class="card-img-overlay d-flex justify-content-between align-items-end p-2">
+                        <div class="d-flex align-items-end text-white prod">
+                            <div class="raiting kp">7.5</div>
+                            <div class="cinema">KP</div>
+                        </div>
+                        <div class="d-flex align-items-end text-white prod">
+                            <div class="raiting imdb">7.1</div>
+                            <div class="cinema">IMDB</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Мультфильм-->
+            <div class="col p-3">
+                <div class="card rounded-4">
+                    <img src="assets/jpg/chebu.jpg" alt="Чебурашка">
+                    <!--Рейтинг-->
+                    <div class="card-img-overlay d-flex justify-content-between align-items-end p-2">
+                        <div class="d-flex align-items-end text-white prod">
+                            <div class="raiting kp">8.1</div>
+                            <div class="cinema">KP</div>
+                        </div>
+                        <div class="d-flex align-items-end text-white prod">
+                            <div class="raiting imdb">7.9</div>
+                            <div class="cinema">IMDB</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="b-example-divider"></div>
+
+    <!--Подвал сайта-->
+    <footer class="py-3">
+        <div class="logo-footer d-flex justify-content-center align-items-center mb-3">
+            <img src="assets/png/lenta.png" alt="Лента">
+            <p>KONOFILMS</p>
+        </div>
+        <ul class="nav justify-content-center pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-black">Films</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-black">Cartoons</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-black">Serials</a></li>
+        </ul>
+        <p class="text-center text-body-black">All rights reserved</p>
+        <p class="text-center text-body-black">© 2024 Konofilms, Inc</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
